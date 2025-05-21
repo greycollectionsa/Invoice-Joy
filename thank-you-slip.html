@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Slip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+        }
+        .header-logo {
+            width: 100%;
+            max-height: 100px;
+            object-fit: contain;
+            margin-bottom: 30px;
+        }
+        .thank-you-header {
+            text-align: center;
+            color: #1a1a2e;
+            margin-bottom: 30px;
+        }
+        .project-details {
+            margin-bottom: 30px;
+        }
+        .project-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .project-table th,
+        .project-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .project-table th {
+            background-color: #1e1e2f;
+            color: white;
+        }
+        .terms {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+        .terms h3 {
+            color: #1a1a2e;
+            margin-top: 0;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #666;
+        }
+        .current-date {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        @media print {
+            body {
+                padding: 0;
+            }
+            .terms {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="Main logo.svg" alt="Company Logo" class="header-logo">
+    <div class="thank-you-header">
+        <h1>Thank You for Your Business!</h1>
+        <div class="current-date"></div>
+    </div>
+    
+    <div class="project-details">
+        <h2>Project Details</h2>
+        <div class="client-info"></div>
+        <table class="project-table">
+            <thead>
+                <tr>
+                    <th>Service Description</th>
+                    <th>Quantity</th>
+                    <th>Duration</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Items will be populated dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="terms">
+        <h3>Review Period Terms & Conditions</h3>
+        <p>Dear valued client,</p>
+        <p>We want to ensure your complete satisfaction with our services. Please note the following important terms:</p>
+        <ol>
+            <li>You have <strong>7 days</strong> from the date of this slip to review all deliverables and request any necessary modifications.</li>
+            <li>After the 7-day review period, any additional changes will be treated as new project modifications and will be invoiced accordingly.</li>
+            <li>Please ensure all feedback and change requests are submitted in writing within the 7-day review period.</li>
+        </ol>
+        <p>Review period ends: <strong class="review-end-date"></strong></p>
+    </div>
+
+    <div class="footer">
+        <p>Thank you for choosing our services. We look forward to delivering exceptional results!</p>
+        <p>For any questions or concerns, please contact us:</p>
+        <p>(+27) 611-552-8678 | www.x.com/identityjoy</p>
+    </div>
+</body>
+</html>
