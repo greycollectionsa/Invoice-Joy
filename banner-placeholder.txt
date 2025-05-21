@@ -1,0 +1,3 @@
+The banner.png file is a large image file that needs to be separately uploaded to the repository.
+
+Please upload the actual banner.png image directly through the GitHub interface or using git commands after cloning the repository.
