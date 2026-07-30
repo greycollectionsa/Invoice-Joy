@@ -1,2 +1,13 @@
-http.server
-json
+# No third-party packages are required.
+#
+# This project runs on the Python standard library only. server.py uses
+# http.server, json, pathlib, os, socket, sys and signal, all of which ship
+# with Python 3.
+#
+# This file previously listed "http.server" and "json" as if they were
+# installable packages. They are not on PyPI, so "pip install -r
+# requirements.txt" failed with a 404. There is nothing to install. Just run:
+#
+#     python3 server.py
+#
+# The file is kept so tooling that expects a requirements.txt still finds one.
