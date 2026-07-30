@@ -347,3 +347,31 @@ button {
     margin: 0;
   }
 }
+/* --- Invoice Joy script.js additions --- */
+
+/* Custom item description inside a row */
+.custom-desc-wrap {
+  margin-top: 4px;
+}
+
+.custom-desc {
+  display: block;
+  min-width: 100px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.custom-desc:empty::before {
+  content: 'Describe item...';
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Totals table row animation base (no CSS transition on opacity/transform — JS owns those) */
+#invoiceTable tbody tr {
+  will-change: transform, opacity;
+}
