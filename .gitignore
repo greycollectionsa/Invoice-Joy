@@ -1,0 +1,21 @@
+# The server writes a .bak beside any JSON file before it overwrites it.
+# Those are local working files and must never be committed.
+*.bak
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Exported quotes and invoices, in case you save them into the project folder
+*.pdf
+
+# NOTE: clients.json and number_tracker.json ARE tracked on purpose, as empty
+# seed files so a fresh clone starts clean. Once you begin real work they will
+# show up as local changes. That is expected. Do not commit real client data
+# to a public fork, and never put banking details in the HTML.
